@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Customer Survey</title>
+</head>
+<body>
+
+<div id="center-box">
+  <div id="survey-container">
+    <div class="welcome-screen">
+      <h1>Welcome to our shop!</h1>
+      <button onclick="startSurvey()">Start Survey</button>
+    </div>
+
+    <div class="question-container" id="question-1">
+      <div id="question-number">1/5</div>
+      <div id="question-text">How satisfied are you with our products?</div>
+      <form id="rating-form">
+        <label><input type="radio" name="rating" value="1">1</label>
+        <label><input type="radio" name="rating" value="2">2</label>
+        <label><input type="radio" name="rating" value="3">3</label>
+        <label><input type="radio" name="rating" value="4">4</label>
+        <label><input type="radio" name="rating" value="5">5</label>
+      </form>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div class="question-container" id="question-2">
+      <div id="question-number">2/5</div>
+      <div id="question-text">How fair are the prices compared to similar retailers?</div>
+      <form id="rating-form">
+        <label><input type="radio" name="rating" value="1">1</label>
+        <label><input type="radio" name="rating" value="2">2</label>
+        <label><input type="radio" name="rating" value="3">3</label>
+        <label><input type="radio" name="rating" value="4">4</label>
+        <label><input type="radio" name="rating" value="5">5</label>
+      </form>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div class="question-container" id="question-3">
+      <div id="question-number">3/5</div>
+      <div id="question-text">How satisfied are you with the value for money of your purchase?</div>
+      <form id="rating-form">
+        <label><input type="radio" name="rating" value="1">1</label>
+        <label><input type="radio" name="rating" value="2">2</label>
+        <label><input type="radio" name="rating" value="3">3</label>
+        <label><input type="radio" name="rating" value="4">4</label>
+        <label><input type="radio" name="rating" value="5">5</label>
+      </form>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div class="question-container" id="question-4">
+      <div id="question-number">4/5</div>
+      <div id="question-text">On a scale of 1-10 how would you recommend us to your friends and family?</div>
+      <form id="rating-form">
+        <label><input type="radio" name="rating" value="1">1</label>
+        <label><input type="radio" name="rating" value="2">2</label>
+        <label><input type="radio" name="rating" value="3">3</label>
+        <label><input type="radio" name="rating" value="4">4</label>
+        <label><input type="radio" name="rating" value="5">5</label>
+        <label><input type="radio" name="rating" value="1">6</label>
+        <label><input type="radio" name="rating" value="2">7</label>
+        <label><input type="radio" name="rating" value="3">8</label>
+        <label><input type="radio" name="rating" value="4">9</label>
+        <label><input type="radio" name="rating" value="5">10</label>
+      </form>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div class="question-container" id="question-5">
+      <div id="question-number">5/5</div>
+      <div id="question-text">What could we do to improve our service? (Text Type)</div>
+      <textarea id="answer-text" rows="4" cols="50"></textarea>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div class="thank-you-screen" style="display: none;">
+      <h2>Thank you for your time!</h2>
+      <p>Your survey has been submitted.</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
